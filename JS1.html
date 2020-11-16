@@ -1,0 +1,41 @@
+<!--BFC块级格式化上下文-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper{
+            border:5px solid blueviolet;
+            overflow: hidden;   /*把框撑起来，产生格式化上下文*/
+            /*position: absolute;   一样可以撑起来但是完全包裹*/
+        }
+        #left{
+            width:200px;
+            height: 200px;
+            background-color: aquamarine;
+            float: left;
+        }
+        #middle{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            float: left;
+        }
+        #right{
+            width:200px;
+            height: 200px;
+            background-color: cadetblue;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div id = "wrapper">
+        <div id = "left"></div>
+        <div id = "middle"></div>
+        <div id = "right"></div>
+    </div>
+</body>
+</html>
