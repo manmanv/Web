@@ -1,35 +1,22 @@
-//箭头函数
-
-var a5 = (x,y)=>{
-    console.log(x+y);
+function pear(name,price,origin,weight){
+    this.name = name,
+    this.price = price,
+    this.origin = origin,
+    this.weight = weight,
+    this.printName = function (){
+        console.log("this is pear" + this.name);
+        
+    }
+}
+pear.prototype.printName2 = function(){
+    console.log("this is printName 2");
     
 }
-a5(5,4);
-console.log(typeof a5);
+var p1 = new pear("一号梨子",12,"河南",10);
+p1.printName();
+p1.printName2();
 
-var a6 = function apple6(){
-    console.log('apple5');
-    return 100;
-}() //加括号立即执行函数
-
-console.log(a6);
-
-//闭包
-(function(x,y){
-    console.log("江西软件大学")
-    console.log(x+y);
-    
-})(3,6) //括号可以传参
-
-//原型
-function Furit(){
-    console.log("this is furit");
-    
-}
-Furit.prototype.apple = function apple(){
-    console.log('apple');
-    
-}
-var a88 = new Furit();
-console.log(a88.apple());
+console.log(p1.__proto__);
+console.log(p1.__proto__.__proto__);
+console.log(pear.prototype.__proto__.__proto__);
 
