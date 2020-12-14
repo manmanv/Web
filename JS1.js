@@ -1,22 +1,11 @@
-function pear(name,price,origin,weight){
-    this.name = name,
-    this.price = price,
-    this.origin = origin,
-    this.weight = weight,
-    this.printName = function (){
-        console.log("this is pear" + this.name);
+//异步
++function (){
+    console.log("this is no.1");
+    setTimeout(function(){
+        console.log("this is no.2");
         
-    }
-}
-pear.prototype.printName2 = function(){
-    console.log("this is printName 2");
+    },1000);
+    console.log("this is no.3");
+
     
 }
-var p1 = new pear("一号梨子",12,"河南",10);
-p1.printName();
-p1.printName2();
-
-console.log(p1.__proto__);
-console.log(p1.__proto__.__proto__);
-console.log(pear.prototype.__proto__.__proto__);
-
