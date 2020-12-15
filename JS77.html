@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+        /*
         var ldh = {
             uname:'刘德华',
             age:55,
@@ -21,8 +22,24 @@
                 
             }
         }
+        */
 
         //构造函数
+        //new 构造函数名 ();
+        function Star(uname,age,sex){
+            this.name = uname;
+            this.age = age;
+            this.sex = sex;
+            
+        }
+        var ldh = new Star('刘德华',18,'男');   //调用函数返回的是一个对象
+        console.log(ldh.name);
+        console.log(ldh['sex']);
+
+        var zxy = new Star('张学友',19,'男');
+        console.log(zxy.name);
+        
+        
     </script>
 </head>
 <body>
