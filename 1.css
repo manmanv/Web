@@ -1,0 +1,105 @@
+.logo{
+    display:inline-block;
+    height:70px;
+    width:100%; 
+    border:2px solid hsla(0, 19%, 93%, 0.863);
+    border-style:outset;
+}
+.logo1{
+    margin-left: 150px;
+}
+.logo2{
+    margin-left:90%;
+    margin-top: -63px;
+}
+.logo3{
+    margin-left:75%;
+    margin-top: -45px;
+}
+.logo4{
+    margin-left:80%;
+    margin-top: -42px;
+}
+.zuo{
+    display:inline-block;
+    height:400px;
+    width:20%;
+    margin-top: 5px;
+    margin-left: 150px;
+    background-color:rgba(0, 183, 255, 0.068);
+}
+.zhuye{
+    height:50px;
+    width:90%;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 25px;
+    color:rgba(0, 0, 0, 0.685)
+}
+.zhuye:hover{
+    background-color:  rgba(0, 183, 255, 0.11);
+}
+.gereng{
+    height:50px;
+    width:90%;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 25px;
+    color:rgba(0, 0, 0, 0.685)
+}
+.gereng:hover{
+    background-color:  rgba(0, 183, 255, 0.11);
+}
+.zhanghao{
+    height:50px;
+    width:90%;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 25px;
+    line-height: 50px;
+}
+.zhanghao:hover{
+    background-color: rgba(0, 183, 255, 0.11);
+}
+.you{
+
+    height:1000px;
+    width:62.5%;
+    margin-top: -400px;
+    margin-left: 31%;
+    background-color:rgba(0, 183, 255, 0.068);
+}
+#da{
+    display:inline-block;
+    margin-left:4%;
+    height:50px;
+    width:20%;
+    margin-top: 5px;
+    background-color: rgba(0, 183, 255, 0.11);
+    border-style: none;
+}
+#w div:target{
+    display: block;
+}
+#b{
+    background-color:rgba(0, 183, 255, 0.068);
+    height:1000px;
+    width:100%;
+    display: none;
+}
+.q1{
+    height:15%;
+    width:100%;
+    background-color:rgba(0, 183, 255, 0.11);
+    position: relative;
+    margin-top: 10px;
+}
+#c{
+    background-color:rgba(0, 183, 255, 0.068);
+    height: 1000px;
+    width:100%;
+    display: none;
+}
+
+
+
