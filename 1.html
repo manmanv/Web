@@ -3,46 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type  = "text/css" href="1.css" />
     <title>Document</title>
-
+    <style>
+        .warning{
+            color:red;
+            font-size:8px;
+        }
+        #apple{
+            background-color: green;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+    <script src = "https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
 </head>
 <body>
-    <div class = "logo">
-        <div class = "logo1"><img src = "1.png" style = "width:250px;height:70px"></div>
-        <div class = "logo2"><img src = "2.png" style = "width:50px;height:50px"></div>
-        <div class = "logo3"><img src = "3.png" style = "width:35px;height:35px"></div>
-        <div class = "logo4"><img src = "4.png" style = "width:35px;height:35px"></div>
-    </div>
-    <div class = "zuo">
-        <div class = "zhuye"><img src = "5.png" style = "width:35px;height:35px;margin-left: 40px;margin-top: 8px;"><p style = "margin-left:90px;margin-top: -40px;">主页</p></div>
-        <div class = "gereng"><img src = "6.png" style = "width:35px;height:35px;margin-left: 40px;margin-top: 8px;"><p style = "margin-left:90px;margin-top: -40px;">个人中心</p></div>
-        <div class = "zhanghao"><p style = "margin-left:90px;margin-top:0px;color:rgba(0, 0, 0, 0.377)">账号信息</p></div>
-        <div class = "zhanghao"><p style = "margin-left:90px;margin-top:0px;color:rgba(0, 0, 0, 0.377)">关于我们</p></div>
-        <div class = "zhanghao"><p style = "margin-left:90px;margin-top:0px;color:rgba(0, 0, 0, 0.377)">常见问题</p></div>
-        <div class = "zhanghao"><p style = "margin-left:90px;margin-top:0px;color:rgba(0, 0, 0, 0.377)">联系我们</p></div>
-    </div>
-    <div class = "you">
-        <button class = "xing" id = "da"><a href = "#b" style = "text-decoration: none;"><p style = "text-align:center;line-height: 10px;font-size: 20px;color: rgba(0, 0, 0, 0.795);">最新问题</p></a></button>
-        <button class = "re" id = "da"><a href = "#c" style = "text-decoration: none;"><p style = "text-align:center;line-height: 10px;font-size: 20px;color: rgba(0, 0, 0, 0.795);">热门回答</p></a></button>
-        <div id = "w">
-            <div id = "b">
-                <div class = "q1"><p style="font-size: 25px;color: rgba(0, 0, 0, 0.63);margin-left: 20px;margin-top: 10px;">question1</p><img src = "8.png" style = "width:40px;height:40px;margin-top: 30px;margin-left: 20px;"></div>
-                <div class = "q1"><p style="font-size: 25px;color: rgba(0, 0, 0, 0.63);margin-left: 20px;margin-top: 10px;">question2</p><img src = "8.png" style = "width:40px;height:40px;margin-top: 30px;margin-left: 20px;"></div>
-                <div class = "q1"><p style="font-size: 25px;color: rgba(0, 0, 0, 0.63);margin-left: 20px;margin-top: 10px;">question3</p><img src = "8.png" style = "width:40px;height:40px;margin-top: 30px;margin-left: 20px;"></div>
-                <div class = "q1"><p style="font-size: 25px;color: rgba(0, 0, 0, 0.63);margin-left: 20px;margin-top: 10px;">question4</p><img src = "8.png" style = "width:40px;height:40px;margin-top: 30px;margin-left: 20px;"></div>
-                <div class = "q1"><p style="font-size: 25px;color: rgba(0, 0, 0, 0.63);margin-left: 20px;margin-top: 10px;">question5</p><img src = "8.png" style = "width:40px;height:40px;margin-top: 30px;margin-left: 20px;"></div>
-                <div class = "q1"><p style="font-size: 25px;color: rgba(0, 0, 0, 0.63);margin-left: 20px;margin-top: 10px;">question6</p><img src = "8.png" style = "width:40px;height:40px;margin-top: 30px;margin-left: 20px;"></div>
+    
+    <div id = "wrapper">
+        <p>
+            <label for = "">用户名：</label>
+            <input type = "text" name = "username" id = "username">
+            <span id = "tip1" class = "warning"></span>
+        </p>
+        <p>
+            <label for = "">密码:</label>
+            <input type = "text" name = "password" id = "password">
+            <span id = "tip2" class = "warning"></span>
+        </p>
+        <p>
+            <div id = "apple">
+
             </div>
-            <div id = "c">
-                <div class = "q1"><p style="font-size: 25px;color: rgba(0, 0, 0, 0.63);margin-left: 20px;margin-top: 10px;">question7</p><img src = "8.png" style = "width:40px;height:40px;margin-top: 30px;margin-left: 20px;"></div>
-                <div class = "q1"><p style="font-size: 25px;color: rgba(0, 0, 0, 0.63);margin-left: 20px;margin-top: 10px;">question8</p><img src = "8.png" style = "width:40px;height:40px;margin-top: 30px;margin-left: 20px;"></div>
-                <div class = "q1"><p style="font-size: 25px;color: rgba(0, 0, 0, 0.63);margin-left: 20px;margin-top: 10px;">question9</p><img src = "8.png" style = "width:40px;height:40px;margin-top: 30px;margin-left: 20px;"></div>
-                <div class = "q1"><p style="font-size: 25px;color: rgba(0, 0, 0, 0.63);margin-left: 20px;margin-top: 10px;">question10</p><img src = "8.png" style = "width:40px;height:40px;margin-top: 30px;margin-left: 20px;"></div>
-                <div class = "q1"><p style="font-size: 25px;color: rgba(0, 0, 0, 0.63);margin-left: 20px;margin-top: 10px;">question11</p><img src = "8.png" style = "width:40px;height:40px;margin-top: 30px;margin-left: 20px;"></div>
-                <div class = "q1"><p style="font-size: 25px;color: rgba(0, 0, 0, 0.63);margin-left: 20px;margin-top: 10px;">question12</p><img src = "8.png" style = "width:40px;height:40px;margin-top: 30px;margin-left: 20px;"></div>
-            </div>
-        </div>
+        </p>
     </div>
+    <script>
+        /*
+        var _username = document.getElementById('username');
+        _username.onblur = function(){
+            //alert("blur")
+            //console.log();
+            if(_username.value.length<4){
+                //alert("用户长度小于4")
+                var _tip1 = document.getElementById("tip1");
+                _tip1.innerHTML = "用户名长度小于4了";
+
+            }
+        }
+        var _password = document.getElementById("password");
+        _password.onblur = function(){
+            if(_password.value.length<8){
+                var _tip2 = document.getElementById("tip2");
+                _tip2.innerHTML = "密码长度小于8了";
+            }
+        }
+        $("#apple").click(function(){
+            //alert("我被点击了")
+           // $("#apple").css("background-color","red");
+            // $("#apple").css("width","600px");
+            //target.css("background-color","red");
+            //target.css("width","600px");
+            //target.css("height","500px");
+
+            if("rgb(0,128,0)"==target.css("background-color")){
+                target.css("background-color","red");
+            }
+            else if("rgb(255,0,0)"==target.css("background-color")){
+                target.css("background-color","green");
+            }
+        })
+    */
+    
+        $("#username").ready(function(){
+            var newTip = $("<strong class = 'warning'>*</strong>")
+            $("p:first-child").append(newTip);
+            $("username").blur(function(){
+                if(("#username").val().length<4){
+                    $("#tip1").text("你的密码长度必须大于4位");
+                    $("strong").hide()
+                }
+            })
+        })
+    </script>
 </body>
 </html>
